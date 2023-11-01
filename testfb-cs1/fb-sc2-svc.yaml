@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fb-sc2-svc
+  namespace: testfb-cs1
+spec:
+  selector:
+    app: file-browser
+  ports:
+    - protocol: TCP
+      port: 80
