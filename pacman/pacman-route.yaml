@@ -6,6 +6,12 @@ metadata:
     app.kubernetes.io/name: pacman
 spec:
   path: "/"
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+  wildcardPolicy: None
   to:
     kind: Service
     name: pacman
+    weight: 100
