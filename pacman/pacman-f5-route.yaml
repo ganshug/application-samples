@@ -11,3 +11,9 @@ spec:
   to:
     kind: Service
     name: pacman
+    weight: 100
+  port:
+    targetPort: 27017
+  tls:
+    termination: edge
+  wildcardPolicy: None
