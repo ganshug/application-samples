@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: fb5-route
+  namespace: testfb-cs1
+spec:
+  host: fb5-route-testfb-cs1.apps.scalerm2-41311.apps.racksan.mydomain.com
+  to:
+    kind: Service
+    name: fb-sc2-svc
+    weight: 100
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+  wildcardPolicy: None
