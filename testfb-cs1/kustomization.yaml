@@ -1,0 +1,6 @@
+resources:
+- fb-pvc1.yaml
+- fb-pvc3.yaml
+- pod.yaml
+- fb-sc2-svc.yaml
+- fb5-route.yaml
